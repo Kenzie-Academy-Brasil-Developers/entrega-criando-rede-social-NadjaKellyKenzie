@@ -1,0 +1,35 @@
+
+body{
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+
+:root{
+    /* cores gerais */
+    --greyColor0: #0a0c0d;
+    --greyColor1: #212529;
+    --greyColor2: #495057;
+    --greyColor3: #868e96;
+    /* cores basicas */
+    --greyColor4: #dee2e6;
+    --greyColor5: #f8f9fa;
+    --greyColor6: #21252980;
+    /* cor like */
+    --greyColor: #d7443e;
+
+    /* fontes */
+    --title-weight1: 700px;
+    --title-weight2: 600px;
+    --title-weight3: 400px;
+    /* ///////////////// */
+    --title-size1: 1.75rem;
+    --title-size2: 1.25rem;
+    --title-size3: 1rem;
+    --title-size4: 0.875rem;
+    --title-size5: 0.75rem;
+    /* ///////////////// */
+    --title-heigth1: 2.5rem;
+    --title-heigth2: 1.5rem;
+    --title-heigth3: 1.75rem;
+    --title-heigth4: 1rem;
+}
