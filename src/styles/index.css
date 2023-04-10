@@ -200,7 +200,6 @@ header button {
 
 .publications__post-text {
     margin-top: .625rem;
-    
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -247,5 +246,32 @@ header button {
 /* modal */
 
 dialog{
-    width: 12.5rem;
+    margin-top: 6.25rem;
+    width: 18.75rem;
+    border-radius: 8px;
+}
+
+
+dialog img{
+    width: 3.25rem;
+    height: 3.25rem;
+}
+
+dialog h1{
+    font-weight: bold;
+    font-size: var(--title-size2);
+    line-height: var(---title-heigth2);
+}
+
+dialog h2{
+    font-size: var(--title-size3);
+    font-weight: bold;
+    line-height: var(---title-heigth3);
+}
+
+dialog p{
+    white-space:normal;
+    overflow: visible;
+    text-overflow: unset;
+    font-size: var(--title-size4)
 }

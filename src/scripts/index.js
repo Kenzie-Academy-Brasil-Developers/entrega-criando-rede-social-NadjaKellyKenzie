@@ -57,11 +57,38 @@ publications(posts)
     }
 
     function openPost(btn, post){
-        const dialog = document.querySelector(".modal__dialog")
-        btn.addEventListener("click", function (e) {
-        const  target = e.target
-        const parentElement = target.closest(".publications__item")
-        console.log(post.img)
+        btn.addEventListener("click", function () {
+            const dialog = document.querySelector(".modal__dialog")
+            dialog.innerHTML = ""
+        
+            const userBoxDiv = document.createElement("div") //div que separa o box do usuario autor do post
+            userBoxDiv.classList.add("publications__user-box")
 
+            const divUserImg = document.createElement('div'); //separando a imagem
+            const imgUser = document.createElement('img');
+            imgUser.setAttribute('src', post.img);
+
+            const divUser = document.createElement('div') //separando o outro lado
+            const pName = document.createElement('h2');
+            pName.textContent = post.user;
+            const pStack = document.createElement('p');
+            pStack.textContent = post.stack;
+
+            const postContent = document.createElement("div")
+            postContent.classList.add("publications__post-content")
+            const postTitle = document.createElement("h1")
+            postTitle.classList.add('publications__post-title')
+            postTitle.textContent = post.title
+            const postText = document.createElement("p")
+            postText.classList.add("publications__post-text")
+            postText.textContent = post.text
+
+            postContent.append(postTitle, postText)
+            divUserImg.appendChild(imgUser)
+            divUser.append(pName, pStack)
+            userBoxDiv.append(divUserImg, divUser)
+
+            dialog.append(userBoxDiv, postContent)
+            dialog.showModal()
         } )
     }
