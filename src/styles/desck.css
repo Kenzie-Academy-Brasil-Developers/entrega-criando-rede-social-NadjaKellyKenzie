@@ -2,6 +2,43 @@
     header{
         width: 100%;
     }
-
+.new__Form{
+    width: 100%;
+}
+.other__flex{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.other__People{
+    display: flex;
+    width: 100%;
+}
+.other__People button{
+    margin-left: 3.75rem;
+}
+.new__Post{
+    width: 50%;
+}
+.form__container{
+    width: 50%;
+}
+.main__container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.other{
+    margin: 0;
+    width: 40%;
+}
+.publications__post-content{
+    width: 50%;
+}
+div .publications{
+    width: 44.5625rem;
+    height: 2.5rem;
+}
 
 }

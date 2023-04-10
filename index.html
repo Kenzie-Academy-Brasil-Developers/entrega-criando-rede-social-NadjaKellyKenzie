@@ -30,6 +30,7 @@
   </header>
   <dialog class="modal__dialog">
   </dialog>
+  <main>
   <div class="new__Post">
     <div>
       <img src="./src/assets/img/user1.svg" alt="">
@@ -39,16 +40,16 @@
       <p>Front End Engineer</p>
     </div>
   </div>
-  <div>
+  <div class="main__container">
+    <div class="form__container">
     <form class="new__Form">
       <label for="text"></label>
       <input class="input__One" type="text" placeholder="Digitar titulo do texto">
       <label for="text"></label>
-      <input type="text" placeholder="Digitar descrição do texto">
-      <button>Postar</button>
+    <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Digitar descrição do texto"></textarea>
+  <div class="button-container"> <button> Postar </button> </div> 
     </form>
   </div>
-  <main>
     <div class="other">
       <h1>Sugestões para você seguir</h1>
       <ul class="other__flex" id="other__flexId">
@@ -59,8 +60,8 @@
           <div>
             <h2>Samuel Leão</h2>
             <p>Front End Engineer</p>
-            <button>Seguir</button>
           </div>
+          <button>Seguir</button>
         </li>
         <li class="other__People">
           <div>
@@ -69,8 +70,8 @@
           <div>
             <h2>Samuel Leão</h2>
             <p>Front End Engineer</p>
-            <button>Seguir</button>
           </div>
+          <button>Seguir</button>
         </li>
         <li class="other__People">
           <div>
@@ -79,8 +80,8 @@
           <div>
             <h2>Samuel Leão</h2>
             <p>Front End Engineer</p>
-            <button>button</button>
           </div>
+          <button>button</button>
         </li>
         <li class="other__People">
           <div>
@@ -89,8 +90,8 @@
           <div>
             <h2>Samuel Leão</h2>
             <p>Front End Engineer</p>
-            <button>button</button>
           </div>
+          <button>button</button>
         </li>
         <li class="other__People">
           <div>
@@ -99,10 +100,11 @@
           <div>
             <h2>Samuel Leão</h2>
             <p>Front End Engineer</p>
-            <button>button</button>
           </div>
+          <button>button</button>
         </li>
       </ul>
+    </div>
     </div>
     <div class="publications">
       <h1>Posts</h1>
