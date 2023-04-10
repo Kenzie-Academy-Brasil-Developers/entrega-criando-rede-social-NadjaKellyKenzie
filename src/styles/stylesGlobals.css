@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 body{
     font-size: 1rem;
     padding: 0 1rem;
@@ -10,6 +10,9 @@ body{
     --greyColor1: #212529;
     --greyColor2: #495057;
     --greyColor3: #868e96;
+    /* cores de click */
+    --greyClick0: #4263eb;
+    --greyClick1: #364fc7;
     /* cores basicas */
     --greyColor4: #dee2e6;
     --greyColor5: #f8f9fa;
@@ -33,3 +36,4 @@ body{
     --title-heigth3: 1.75rem;
     --title-heigth4: 1rem;
 }
+

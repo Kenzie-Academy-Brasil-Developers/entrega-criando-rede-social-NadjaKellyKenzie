@@ -1,0 +1,251 @@
+/* Codando header mobibe */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    padding: 1.875rem 1.25rem;
+
+    background-color: var(--greyColor1);
+    color: var(--greyColor5);
+    gap: .625rem;
+    width: 26.5625rem;
+    height: 4.6875rem;
+    left: 0rem;
+    top: 0rem;
+
+}
+
+header h1 {
+    font-size: var(--title-size2);
+    font-weight: var(--title-weight2);
+    line-height: var(---title-heigth2);
+}
+
+header button {
+    border-bottom-style: none;
+    background-color: var(--greyColor1);
+    color: var(--greyColor5);
+
+}
+
+/* Codando novo post mobile */
+
+.new__Post {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 6.4375rem;
+    flex-direction: row;
+    flex-grow: 0;
+
+}
+
+.new__Post img {
+    width: 3.25rem;
+    height: 3.25rem;
+}
+
+.new__Post h2 {
+    font-weight: bold;
+    font-size: var(--title-size2);
+    line-height: var(---title-heigth2);
+}
+
+.new__Post p {
+    margin-top: .25rem;
+    font-size: var(--title-size4);
+}
+
+.new__Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem;
+    gap: 1.375rem;
+
+}
+
+.new__Form input {
+    display: flex;
+    width: 100%;
+    height: 1.25rem;
+    padding: 1.25rem;
+    border: 1px solid var(--greyColor3);
+    border-color: var(--greyColor3);
+}
+
+.new__Form button {
+    display: flex;
+    align-items: end;
+
+}
+
+.new__Form button:hover {
+    background-color: var(--greyClick1);
+}
+
+/* Estilizando outras pessoas */
+
+
+.other {
+    margin-top: .625rem;
+}
+
+.other h1 {
+    font-weight: bold;
+    font-size: var(--title-size2);
+    line-height: var(---title-heigth2);
+}
+
+.other__People {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1.25rem;
+    flex-direction: row;
+}
+
+.other__flex {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-x: scroll;
+    align-items: flex-start;
+}
+
+.other__People img {
+    width: 3.25rem;
+    height: 3.25rem;
+}
+
+.other__People h2 {
+    width: 150px;
+    font-weight: bold;
+    font-size: var(--title-size2);
+    line-height: var(---title-heigth2);
+}
+
+.other__People p {
+    margin-top: .25rem;
+    font-size: var(--title-size4);
+}
+
+.other__flex button{
+    margin-top: 10px;
+    height: 25px;
+    width: 70px;
+    border-radius: 2px;
+    background-color: var(--greyColor5);
+    border: solid 0.1px var(--greyColor1);
+}
+.other__flex button:hover{
+    background-color: var(--greyClick1);
+
+}
+
+/* publicações */
+
+.publications__list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1.25rem;
+    flex-direction: row;
+    flex-grow: 0;
+}
+
+.publications img {
+    width: 3.25rem;
+    height: 3.25rem;
+}
+
+.publications h1 {
+    margin-top: 20px;
+    font-size: var(--title-size2);
+    line-height: var(---title-heigth2);
+    font-weight: bold;
+}
+
+.publications__people {
+    margin-top: 20px;
+}
+
+.publications__people h1 {
+    font-weight: bold;
+    font-size: var(--title-size2);
+    line-height: var(---title-heigth2);
+}
+
+.publications__people h2 {
+    font-size: var(--title-size3);
+    font-weight: bold;
+    line-height: var(---title-heigth3);
+}
+
+.publications__user-box {
+    display: flex;
+    align-items: center;
+    margin-top: .625rem;
+    gap: .625rem;
+}
+
+.publications__post-title {
+    margin-top: .625rem;
+}
+
+.publications__post-text {
+    margin-top: .625rem;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* buttons */
+.publications__posts-buttons {
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+}
+
+.publications__posts-buttons img {
+    align-items: center;
+    width: 30px;
+}
+
+.publications__post-button-open-modal {
+    height: 35px;
+    padding: .5rem;
+    border-radius: .375rem;
+    color: var(--greyColor5);
+    background-color: var(--greyColor1);
+}
+
+.publications__post-button-open-modal:hover {
+    color: var(--greyColor0);
+    background-color: var(--greyColor4);
+}
+
+.publications__post-button-open-modal:active {
+    background-color: var(--greyColor5);
+}
+
+.span__style img {
+    width: 10px;
+    font-size: 10px;
+}
+
+.span__style:hover {
+    background-color: var(--greyColor);
+}
+
+/* modal */
+
+dialog{
+    width: 12.5rem;
+}

@@ -1,47 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    
     <!-- CSS -->
     <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
-
+    <link rel="stylesheet" href="src/styles/stylesGlobals.css">
+    
     <!-- FONTE -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+    <script type="module" src="./src/scripts/database.js" defer></script>
+    <script type="module" src="./src/scripts/index.js" defer></script>
 
-    <title>Criando rede social</title>
-  </head>
-  <body>
-    <header>
-      <h1>
-tesh
-      </h1>
-      <nav>
-        <p></p>
-      </nav>
-    </header>
+  <title>Criando rede social</title>
+</head>
+
+<body>
+  <header>
+    <h1>TechPosters</h1>
+    <button>Sair</button>
+  </header>
+  <dialog class="modal__dialog">
+
+  </dialog>
+  <div class="new__Post">
     <div>
-      <ul>
-        <li>
-          <img src="" alt="">
-          <h3></h3>
-          <p></p>
-          <h2></h2>
-          <p></p>
-          <button></button>
-          <button></button>
-
+      <img src="./src/assets/img/user1.svg" alt="">
+    </div>
+    <div>
+      <h2>Samuel Leão</h2>
+      <p>Front End Engineer</p>
+    </div>
+  </div>
+  <div>
+    <form class="new__Form">
+      <label for="text"></label>
+      <input class="input__One" type="text" placeholder="Digitar titulo do texto">
+      <label for="text"></label>
+      <input type="text" placeholder="Digitar descrição do texto">
+      <button>Postar</button>
+    </form>
+  </div>
+  <main>
+    <div class="other">
+      <h1>Sugestões para você seguir</h1>
+      <ul class="other__flex" id="other__flexId">
+        <li class="other__People">
+          <div>
+            <img src="./src/assets/img/user2.svg" alt="">
+          </div>
+          <div>
+            <h2>Samuel Leão</h2>
+            <p>Front End Engineer</p>
+            <button>Seguir</button>
+          </div>
+        </li>
+        <li class="other__People">
+          <div>
+            <img src="./src/assets/img/user3.svg" alt="">
+          </div>
+          <div>
+            <h2>Samuel Leão</h2>
+            <p>Front End Engineer</p>
+            <button>Seguir</button>
+          </div>
+        </li>
+        <li class="other__People">
+          <div>
+            <img src="./src/assets/img/user4.svg" alt="">
+          </div>
+          <div>
+            <h2>Samuel Leão</h2>
+            <p>Front End Engineer</p>
+            <button>button</button>
+          </div>
+        </li>
+        <li class="other__People">
+          <div>
+            <img src="./src/assets/img/user5.svg" alt="">
+          </div>
+          <div>
+            <h2>Samuel Leão</h2>
+            <p>Front End Engineer</p>
+            <button>button</button>
+          </div>
+        </li>
+        <li class="other__People">
+          <div>
+            <img src="./src/assets/img/user1.svg" alt="">
+          </div>
+          <div>
+            <h2>Samuel Leão</h2>
+            <p>Front End Engineer</p>
+            <button>button</button>
+          </div>
         </li>
       </ul>
     </div>
-    <script type="module" src="./src/scripts/index.js"></script>
-  </body>
+    <div class="publications">
+      <h1>Posts</h1>
+      <ul class="publications__people">
+      </ul>
+    </div>
+  </main>
+</body>
+
 </html>
