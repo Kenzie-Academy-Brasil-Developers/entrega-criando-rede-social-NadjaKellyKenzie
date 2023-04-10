@@ -35,6 +35,9 @@ publications(posts)
             postButtonsContainer.classList.add("publications__posts-buttons")
             const btnOpenModal = document.createElement("button")
             btnOpenModal.textContent = "Abrir post"
+            // const btnOpenModalclose = document.createElement("button")//////
+            // btnOpenModalclose.textContent = "x"/////
+            // btnOpenModalclose.classList.add("close__modal")////////
             btnOpenModal.classList.add("publications__post-button-open-modal")
             const btnToLike = document.createElement("img")
             btnToLike.classList.add('span__style')
@@ -49,7 +52,7 @@ publications(posts)
             divUser.append(pName, pStack)
             userBoxDiv.append(divUserImg, divUser)
             postButtonsContainer.append(btnOpenModal, btnToLike, spanCount)
-            liUser.append(userBoxDiv, postContent, postButtonsContainer)
+            liUser.append(userBoxDiv, postContent, postButtonsContainer,)
 
             postsList.appendChild(liUser)
             openPost(btnOpenModal, posts[i])
@@ -61,6 +64,10 @@ publications(posts)
             const dialog = document.querySelector(".modal__dialog")
             dialog.innerHTML = ""
         
+            const btnOpenModalclose = document.createElement("button")//////
+            btnOpenModalclose.textContent = "x"/////
+            btnOpenModalclose.classList.add("close__modal")////////
+
             const userBoxDiv = document.createElement("div") //div que separa o box do usuario autor do post
             userBoxDiv.classList.add("publications__user-box")
 
@@ -83,12 +90,24 @@ publications(posts)
             postText.classList.add("publications__post-text")
             postText.textContent = post.text
 
-            postContent.append(postTitle, postText)
+            postContent.append(postTitle, postText, btnOpenModalclose)/////////
             divUserImg.appendChild(imgUser)
             divUser.append(pName, pStack)
             userBoxDiv.append(divUserImg, divUser)
 
             dialog.append(userBoxDiv, postContent)
             dialog.showModal()
+            modalClose(btnOpenModalclose)
+
         } )
-    }
+} 
+
+
+function modalClose (bnt){
+    const modalX = document.querySelector(".close__modal")
+    const modalXX = document.querySelector(".modal__dialog")
+    bnt.addEventListener('click', function (){
+            modalXX.close()
+    } )
+        
+}

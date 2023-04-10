@@ -248,7 +248,9 @@ header button {
 dialog{
     margin-top: 6.25rem;
     width: 18.75rem;
+    height: 31.25rem;
     border-radius: 8px;
+    border-color: transparent;
 }
 
 
@@ -269,9 +271,20 @@ dialog h2{
     line-height: var(---title-heigth3);
 }
 
-dialog p{
+dialog .publications__post-text{
     white-space:normal;
     overflow: visible;
     text-overflow: unset;
     font-size: var(--title-size4)
+}
+
+.close__modal{
+    display: flex;
+    position: absolute;
+    align-items: end;
+    top: 0;
+    right: 0;
+
+    background-color: blue; 
+    color:darkorchid
 }
