@@ -30,15 +30,24 @@
     justify-content: space-between;
 }
 .other{
-    margin: 0;
+    margin-top:7.4375rem;
     width: 40%;
 }
-.publications__post-content{
-    width: 50%;
-}
+
 div .publications{
     width: 44.5625rem;
     height: 2.5rem;
 }
 
+dialog{
+    align-items: row;
+    width: 500px;
+    height: 400px;
 }
+
+.publications{
+    width: 50%;
+}
+
+}
+

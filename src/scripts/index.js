@@ -111,3 +111,26 @@ function modalClose (bnt){
     } )
         
 }
+
+
+function buttonT (){
+    const bnt = document.querySelector('.bnt');
+bnt.addEventListener('click', function() {
+    if (this.innerText === 'Seguir'){
+        this.innerText = 'Seguindo'; 
+        bnt.style.backgroundColor = '#364fc7'
+        bnt.style.color = '#f8f9fa'
+        bnt.style.width = '5.625rem'
+    }
+   else{
+    this.innerText = 'Seguir'
+    bnt.style.backgroundColor = '#f8f9fa'
+    bnt.style.color = '#0a0c0d'
+    bnt.style.width = '4.375rem'
+   }
+
+})
+
+}
+buttonT()
+  

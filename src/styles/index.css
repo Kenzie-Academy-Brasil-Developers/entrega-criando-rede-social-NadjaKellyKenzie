@@ -12,7 +12,7 @@ header {
     background-color: var(--greyColor1);
     color: var(--greyColor5);
     gap: .625rem;
-    width: 26.5625rem;
+    width: 45.5625rem;
     height: 4.6875rem;
     left: 0rem;
     top: 0rem;
@@ -78,33 +78,55 @@ header button {
     border-color: var(--greyColor3);
     margin-top: 1.375rem;
 }
+
 #textarea{
-    width: 100%;
-    height: 8.125rem;
+    display: flex;
+    
+    resize: both;
+    height: 50%;
+    padding: 1.25rem;
+    border: 1px solid var(--greyColor3);
+    border-color: var(--greyColor3);
     margin-top: 1.375rem;
+    border-width: 100%;
+    width: 100%;
+
 }
+
+
 .button-container{
     display: flex;
     width: 100%;
+    height: 25px;
     justify-content: flex-end;
     margin-top: 1.375rem;
 }
 
+.form__container button{
+    width: 4.375rem;
+}
 
 .new__Form button:hover {
     background-color: var(--greyClick1);
+    color: var(--greyColor5);
 }
+
+
 .button_new-post{
     margin-top: 1.875rem;
     width: 50%;
     display: flex;
     justify-content: flex-end;
 }
+
+
 /* Estilizando outras pessoas */
 
 
 .other {
+
     margin-top: .625rem;
+
 }
 
 .other h1 {
@@ -148,17 +170,14 @@ header button {
 }
 
 .other__flex button{
-    margin-top: 10px;
-    height: 25px;
-    width: 70px;
+    margin-top: .625rem;
+    height: 1.5625rem;
+    width: 4.375rem;
     border-radius: 2px;
     background-color: var(--greyColor5);
     border: solid 0.1px var(--greyColor1);
 }
-.other__flex button:hover{
-    background-color: var(--greyClick1);
 
-}
 
 /* publicações */
 
@@ -291,11 +310,13 @@ dialog .publications__post-text{
 }
 
 .close__modal{
-    display: flex;
     position: absolute;
     align-items: end;
     top: 0;
     right: 0;
-    background-color: blue; 
-    color:darkorchid
+    width: 20px; 
+    height: 20px;
+    text-align: center;
+    border-radius: 1px;
+    color: var(--greyColor2)
 }
