@@ -270,8 +270,8 @@ header button {
     font-size: 10px;
 }
 
-.span__style:hover {
-    background-color: var(--greyColor);
+.span__style img:hover {
+    background-image: var(#d7443e);
 }
 
 /* modal */
@@ -279,7 +279,7 @@ header button {
 dialog{
     margin-top: 6.25rem;
     width: 18.75rem;
-    height: 31.25rem;
+    height: max-content;
     border-radius: 8px;
     border-color: transparent;
 }

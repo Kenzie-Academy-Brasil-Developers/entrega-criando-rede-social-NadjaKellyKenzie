@@ -35,15 +35,19 @@ publications(posts)
             postButtonsContainer.classList.add("publications__posts-buttons")
             const btnOpenModal = document.createElement("button")
             btnOpenModal.textContent = "Abrir post"
-            // const btnOpenModalclose = document.createElement("button")//////
-            // btnOpenModalclose.textContent = "x"/////
-            // btnOpenModalclose.classList.add("close__modal")////////
             btnOpenModal.classList.add("publications__post-button-open-modal")
             const btnToLike = document.createElement("img")
             btnToLike.classList.add('span__style')
-            const btnLiked = document.createElement("img")
-            btnLiked.src = "./src/assets/img/liked.svg"
             btnToLike.src = "./src/assets/img/grey.svg"
+            btnToLike.addEventListener("click", () => {
+              btnToLike.classList.toggle("liked")
+              if(btnToLike.classList.contains("liked")){
+
+                btnToLike.src ="./src/assets/img/liked.svg"
+              }else{
+                btnToLike.src = "./src/assets/img/grey.svg"
+              }
+            })
             const spanCount = document.createElement("span")
             spanCount.textContent = posts[i].likes
 
@@ -64,9 +68,9 @@ publications(posts)
             const dialog = document.querySelector(".modal__dialog")
             dialog.innerHTML = ""
         
-            const btnOpenModalclose = document.createElement("button")//////
-            btnOpenModalclose.textContent = "x"/////
-            btnOpenModalclose.classList.add("close__modal")////////
+            const btnOpenModalclose = document.createElement("button")
+            btnOpenModalclose.textContent = "x"
+            btnOpenModalclose.classList.add("close__modal")
 
             const userBoxDiv = document.createElement("div") //div que separa o box do usuario autor do post
             userBoxDiv.classList.add("publications__user-box")
@@ -90,7 +94,7 @@ publications(posts)
             postText.classList.add("publications__post-text")
             postText.textContent = post.text
 
-            postContent.append(postTitle, postText, btnOpenModalclose)/////////
+            postContent.append(postTitle, postText, btnOpenModalclose)
             divUserImg.appendChild(imgUser)
             divUser.append(pName, pStack)
             userBoxDiv.append(divUserImg, divUser)
@@ -104,33 +108,36 @@ publications(posts)
 
 
 function modalClose (bnt){
-    const modalX = document.querySelector(".close__modal")
-    const modalXX = document.querySelector(".modal__dialog")
+    const modalCLose = document.querySelector(".close__modal")
+    const modalDialog = document.querySelector(".modal__dialog")
     bnt.addEventListener('click', function (){
-            modalXX.close()
+            modalDialog.close()
     } )
         
 }
 
 
-function buttonT (){
-    const bnt = document.querySelector('.bnt');
-bnt.addEventListener('click', function() {
-    if (this.innerText === 'Seguir'){
-        this.innerText = 'Seguindo'; 
-        bnt.style.backgroundColor = '#364fc7'
-        bnt.style.color = '#f8f9fa'
-        bnt.style.width = '5.625rem'
-    }
-   else{
-    this.innerText = 'Seguir'
-    bnt.style.backgroundColor = '#f8f9fa'
-    bnt.style.color = '#0a0c0d'
-    bnt.style.width = '4.375rem'
-   }
+function buttonT() {
+    const btns = document.querySelectorAll('.bnt');
+    btns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        if (this.innerText === 'Seguir') {
+          this.innerText = 'Seguindo';
+          this.style.backgroundColor = '#364fc7';
+          this.style.color = '#f8f9fa';
+          this.style.width = '5.625rem';
+        } else {
+          this.innerText = 'Seguir';
+          this.style.backgroundColor = '#f8f9fa';
+          this.style.color = '#0a0c0d';
+          this.style.width = '4.375rem';
+        }
+      });
+    });
+  }
+  buttonT();
 
-})
 
-}
-buttonT()
   
+
+
