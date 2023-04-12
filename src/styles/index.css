@@ -150,6 +150,7 @@ header button {
     overflow-x: auto;
     overflow-x: scroll;
     align-items: flex-start;
+    gap: 10px;
 }
 
 .other__People img {
